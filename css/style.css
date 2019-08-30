@@ -7,38 +7,84 @@ body a {
     text-decoration: none !important;
     color: #21262b;
 }
-
 :root {
-    --highlight-bar: #fe9b12;
+    --tab-bar-color: #fe9b12;
+    --txt-red: #FF0000;
+    --txt-snow: #fffafa;
+    --txt-night: #21262b;
 }
 
-
 .sale-alert {
-    background-color: var(--highlight-bar); color: snow;
+    background-color: var(--tab-bar-color); color: snow;
     font-size: 1.2em;
     padding-top: 8px;
 }
 .sa-right {
     text-align: right;
 }
-.nav {
-    padding-top: 10px; padding-bottom: 10px;
+@media screen and (min-width: 768px) {
+    .nav {
+        padding-top: 8px; padding-bottom: 6px;
+    }
+    .nav-links {
+        text-align: center;
+        font-size: 1em;
+        margin-top: 10px;
+    }
+    .nav-links-cart {
+        text-align: right;
+        font-size: .7em;
+        margin-top: 12px;
+    }
 }
-.nav-links {
-    text-align: center;
-    font-size: 1.1em;
-    margin-top: 45px;
+@media screen and (min-width: 992px) {
+    .nav {
+        padding-top: 10px; padding-bottom: 10px;
+    }
+    .nav-links {
+        text-align: center;
+        font-size: 1em;
+        margin-top: 25px;
+    }
+    .nav-links-cart {
+        text-align: right;
+        font-size: 1.1em;
+        margin-top: 25px;
+    }
 }
-.nav-links-cart {
-    text-align: right;
-    font-size: 1.2em;
-    margin-top: 42px;
+@media screen and (min-width: 1250px) {
+    .nav {
+        padding-top: 10px; padding-bottom: 10px;
+    }
+    .nav-links {
+        text-align: center;
+        font-size: 1.1em;
+        margin-top: 45px;
+    }
+    .nav-links-cart {
+        text-align: right;
+        font-size: 1.2em;
+        margin-top: 42px;
+    }
 }
+
 .nav-links a {
-    padding-right: 15px;
-}
+        padding-right: 15px;
+    }
 .drop-content {
-    display: none;
+    display: none; position: absolute;
+    width: auto; height: auto;
+    z-index:1;
+}
+.drop-content a {
+    display: block;
+    padding-top: 3px; padding-bottom: 3px;
+}
+.nav-links:hover .drop-content {display: block;}
+
+
+.wishlist:hover {
+    color: var(--txt-red);
 }
 @keyframes heroslide {
     0% { left: 0%; }
@@ -64,12 +110,15 @@ div#hero figure {
 }
   
 footer {
-    background-color: var(--highlight-bar);
+    background-color: var(--tab-bar-color);
     padding-top: 10px; padding-bottom: 8px; 
 }
 footer ul {
     padding: 0;
     list-style-type: none;
+}
+.footer-logo {
+    margin-left: auto; margin-right: auto;
 }
 
 
