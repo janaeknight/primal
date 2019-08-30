@@ -1,0 +1,46 @@
+body { 
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+body a {
+    text-decoration: none !important;
+}
+
+.nav-links a {
+    padding-right: 10px;
+}
+.drop-content {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+@keyframes heroslide {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+    }
+div#hero { overflow: hidden; }
+div#hero figure img { width: 20%; float: left; }
+div#hero figure { 
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 25s heroslide infinite; 
+}
+    
