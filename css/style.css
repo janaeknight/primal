@@ -9,6 +9,10 @@ body {
 }
 body a {
     text-decoration: none !important;
+    color: inherit;
+}
+body a:hover {
+    text-decoration: none !important;
     color: #21262b;
 }
 :root {
@@ -26,73 +30,7 @@ body a {
 .underline a:hover{
     text-decoration: underline !important;
 }
-@-webkit-keyframes shake-bottom {
-    0%,
-    100% {
-      -webkit-transform: rotate(0deg);
-              transform: rotate(0deg);
-      -webkit-transform-origin: 50% 100%;
-              transform-origin: 50% 100%;
-    }
-    10% {
-      -webkit-transform: rotate(2deg);
-              transform: rotate(2deg);
-    }
-    20%,
-    40%,
-    60% {
-      -webkit-transform: rotate(-4deg);
-              transform: rotate(-4deg);
-    }
-    30%,
-    50%,
-    70% {
-      -webkit-transform: rotate(4deg);
-              transform: rotate(4deg);
-    }
-    80% {
-      -webkit-transform: rotate(-2deg);
-              transform: rotate(-2deg);
-    }
-    90% {
-      -webkit-transform: rotate(2deg);
-              transform: rotate(2deg);
-    }
-  }
-  @keyframes shake-bottom {
-    0%,
-    100% {
-      -webkit-transform: rotate(0deg);
-              transform: rotate(0deg);
-      -webkit-transform-origin: 50% 100%;
-              transform-origin: 50% 100%;
-    }
-    10% {
-      -webkit-transform: rotate(2deg);
-              transform: rotate(2deg);
-    }
-    20%,
-    40%,
-    60% {
-      -webkit-transform: rotate(-4deg);
-              transform: rotate(-4deg);
-    }
-    30%,
-    50%,
-    70% {
-      -webkit-transform: rotate(4deg);
-              transform: rotate(4deg);
-    }
-    80% {
-      -webkit-transform: rotate(-2deg);
-              transform: rotate(-2deg);
-    }
-    90% {
-      -webkit-transform: rotate(2deg);
-              transform: rotate(2deg);
-    }
-  }
-  
+
 /*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*/
 
 .sale-alert {
@@ -147,23 +85,16 @@ body a {
 }
 
 .nav-links a {
-        padding-right: 15px;
+        padding-right: 20px;
     }
-.drop-content {
-    display: none; position: absolute;
-    min-width: 50px; height: auto;
-    z-index:1;
-}
-.drop-content a {
-    display: block; position:relative;
-    background-color: lightgrey;
-    padding-top: 3px; padding-bottom: 3px;
-}
-.nav-links:hover .drop-content {display: block;}
-
-
 .wishlist:hover {
     color: var(--txt-red);
+}
+.xs-nav {
+    background-color: var(--tab-bar-color);
+    width: inherit; height: 45px;
+    padding-top: 5px;
+    font-size: 1.3em;
 }
 @keyframes heroslide {
     0% { left: 0%; }
@@ -187,10 +118,22 @@ div#hero figure {
     font-size: 0;
     animation: 25s heroslide infinite; 
 }
-  
+
+
+.product-bar p{
+    padding-top: 5px;
+}
+.seemore-home {
+    padding-right: 30px;
+}
+
+
+
+
 footer {
     background-color: var(--tab-bar-color);
     padding-top: 10px; padding-bottom: 8px; 
+    border-top: 1px inset silver;
 }
 footer ul {
     padding: 0;
@@ -198,21 +141,18 @@ footer ul {
 }
 .footer-logo {
     margin-left: auto; margin-right: auto;
+    padding-top: 15px;
 }
-.seecode {
-    border: 2px solid gray;
-    font-size: 1.2em;
+.footer-links {
+    font-size: 1.5em;
 }
-.seecode:hover {
-    animation: shake-bottom;
-    animation-duration: 0.8s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
+.footer-end {
+    padding-top: 25px;
 }
-
-
-
-
-
-
+.footer-end p{
+    padding-left: 100px;
+}
+.xs-links {
+    padding-top: 25px;
+}
   
