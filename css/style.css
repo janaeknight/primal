@@ -107,7 +107,7 @@ body a:hover {
     95% { left: -300%; }
     100% { left: -400%; }
     }
-div#hero { overflow: hidden; }
+div#hero { overflow: hidden; padding-bottom: 20px; }
 div#hero figure img { width: 20%; float: left; }
 div#hero figure { 
     position: relative;
